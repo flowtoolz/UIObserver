@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9E3084B220A59321008B0FFF /* UIObserverIOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E3084B120A59321008B0FFF /* UIObserverIOS.plist */; };
 		9E3084B520A593D9008B0FFF /* TrextPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3084B420A593D9008B0FFF /* TrextPresenter.swift */; };
-		9E3084C520A595FE008B0FFF /* UIButton+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3084C120A595FE008B0FFF /* UIButton+UIObserver.swift */; };
-		9E3084C620A595FE008B0FFF /* UITextView+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3084C220A595FE008B0FFF /* UITextView+UIObserver.swift */; };
-		9E3084C720A595FE008B0FFF /* UITextField+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3084C320A595FE008B0FFF /* UITextField+UIObserver.swift */; };
-		9E3084C820A595FE008B0FFF /* UILabel+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3084C420A595FE008B0FFF /* UILabel+UIObserver.swift */; };
 		9E3084CC20A599E7008B0FFF /* SwiftObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3084CA20A599E7008B0FFF /* SwiftObserver.framework */; };
 		9E3084CD20A599E7008B0FFF /* SwiftyToolz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3084CB20A599E7008B0FFF /* SwiftyToolz.framework */; };
+		9E719BD220A5A26C00925BC1 /* UIButton+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E719BCE20A5A26C00925BC1 /* UIButton+UIObserver.swift */; };
+		9E719BD320A5A26C00925BC1 /* UITextView+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E719BCF20A5A26C00925BC1 /* UITextView+UIObserver.swift */; };
+		9E719BD420A5A26C00925BC1 /* UITextField+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E719BD020A5A26C00925BC1 /* UITextField+UIObserver.swift */; };
+		9E719BD520A5A26C00925BC1 /* UILabel+UIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E719BD120A5A26C00925BC1 /* UILabel+UIObserver.swift */; };
 		9EF292E220A592B8002E098A /* UIObserverIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF292D820A592B8002E098A /* UIObserverIOS.framework */; };
 		9EF292E720A592B8002E098A /* UIObserverIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF292E620A592B8002E098A /* UIObserverIOSTests.swift */; };
 /* End PBXBuildFile section */
@@ -32,12 +32,12 @@
 /* Begin PBXFileReference section */
 		9E3084B120A59321008B0FFF /* UIObserverIOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIObserverIOS.plist; sourceTree = "<group>"; };
 		9E3084B420A593D9008B0FFF /* TrextPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrextPresenter.swift; path = Code/TrextPresenter.swift; sourceTree = "<group>"; };
-		9E3084C120A595FE008B0FFF /* UIButton+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+UIObserver.swift"; sourceTree = "<group>"; };
-		9E3084C220A595FE008B0FFF /* UITextView+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+UIObserver.swift"; sourceTree = "<group>"; };
-		9E3084C320A595FE008B0FFF /* UITextField+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+UIObserver.swift"; sourceTree = "<group>"; };
-		9E3084C420A595FE008B0FFF /* UILabel+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+UIObserver.swift"; sourceTree = "<group>"; };
 		9E3084CA20A599E7008B0FFF /* SwiftObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftObserver.framework; path = Carthage/Build/iOS/SwiftObserver.framework; sourceTree = "<group>"; };
 		9E3084CB20A599E7008B0FFF /* SwiftyToolz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyToolz.framework; path = Carthage/Build/iOS/SwiftyToolz.framework; sourceTree = "<group>"; };
+		9E719BCE20A5A26C00925BC1 /* UIButton+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+UIObserver.swift"; sourceTree = "<group>"; };
+		9E719BCF20A5A26C00925BC1 /* UITextView+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+UIObserver.swift"; sourceTree = "<group>"; };
+		9E719BD020A5A26C00925BC1 /* UITextField+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+UIObserver.swift"; sourceTree = "<group>"; };
+		9E719BD120A5A26C00925BC1 /* UILabel+UIObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+UIObserver.swift"; sourceTree = "<group>"; };
 		9EF292D820A592B8002E098A /* UIObserverIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIObserverIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF292E120A592B8002E098A /* UIObserverIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIObserverIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF292E620A592B8002E098A /* UIObserverIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIObserverIOSTests.swift; sourceTree = "<group>"; };
@@ -68,22 +68,10 @@
 		9E3084B320A59387008B0FFF /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				9E3084C020A595FE008B0FFF /* iOS */,
+				9E719BCD20A5A26C00925BC1 /* UIKit */,
 				9E3084B420A593D9008B0FFF /* TrextPresenter.swift */,
 			);
 			name = Code;
-			sourceTree = "<group>";
-		};
-		9E3084C020A595FE008B0FFF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9E3084C120A595FE008B0FFF /* UIButton+UIObserver.swift */,
-				9E3084C220A595FE008B0FFF /* UITextView+UIObserver.swift */,
-				9E3084C320A595FE008B0FFF /* UITextField+UIObserver.swift */,
-				9E3084C420A595FE008B0FFF /* UILabel+UIObserver.swift */,
-			);
-			name = iOS;
-			path = Code/iOS;
 			sourceTree = "<group>";
 		};
 		9E3084C920A599E7008B0FFF /* Frameworks */ = {
@@ -93,6 +81,18 @@
 				9E3084CB20A599E7008B0FFF /* SwiftyToolz.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E719BCD20A5A26C00925BC1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9E719BCE20A5A26C00925BC1 /* UIButton+UIObserver.swift */,
+				9E719BCF20A5A26C00925BC1 /* UITextView+UIObserver.swift */,
+				9E719BD020A5A26C00925BC1 /* UITextField+UIObserver.swift */,
+				9E719BD120A5A26C00925BC1 /* UILabel+UIObserver.swift */,
+			);
+			name = UIKit;
+			path = Code/UIKit;
 			sourceTree = "<group>";
 		};
 		9EF292CE20A592B8002E098A = {
@@ -255,10 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E3084B520A593D9008B0FFF /* TrextPresenter.swift in Sources */,
-				9E3084C620A595FE008B0FFF /* UITextView+UIObserver.swift in Sources */,
-				9E3084C520A595FE008B0FFF /* UIButton+UIObserver.swift in Sources */,
-				9E3084C820A595FE008B0FFF /* UILabel+UIObserver.swift in Sources */,
-				9E3084C720A595FE008B0FFF /* UITextField+UIObserver.swift in Sources */,
+				9E719BD220A5A26C00925BC1 /* UIButton+UIObserver.swift in Sources */,
+				9E719BD520A5A26C00925BC1 /* UILabel+UIObserver.swift in Sources */,
+				9E719BD320A5A26C00925BC1 /* UITextView+UIObserver.swift in Sources */,
+				9E719BD420A5A26C00925BC1 /* UITextField+UIObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

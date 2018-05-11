@@ -1,4 +1,5 @@
 import UIKit
+import UIObserver
 
 class ViewController: UIViewController {
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99E19A234415D3B8E89565AA /* Pods_UIObserverExampleIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A695344583D126A52E7AFF84 /* Pods_UIObserverExampleIOS.framework */; };
 		9E44B72D20A5A3EF00F64742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E44B72C20A5A3EF00F64742 /* AppDelegate.swift */; };
 		9E44B72F20A5A3EF00F64742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E44B72E20A5A3EF00F64742 /* ViewController.swift */; };
 		9E44B73220A5A3EF00F64742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E44B73020A5A3EF00F64742 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45AFF2D67A77D726D66B4BE6 /* Pods-UIObserverExampleIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIObserverExampleIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIObserverExampleIOS/Pods-UIObserverExampleIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		74400F5280CA00AD2949FBEA /* Pods-UIObserverExampleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIObserverExampleIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIObserverExampleIOS/Pods-UIObserverExampleIOS.release.xcconfig"; sourceTree = "<group>"; };
 		9E44B72920A5A3EF00F64742 /* UIObserverExampleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIObserverExampleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E44B72C20A5A3EF00F64742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E44B72E20A5A3EF00F64742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9E44B73320A5A3F000F64742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E44B73620A5A3F000F64742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E44B73820A5A3F000F64742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A695344583D126A52E7AFF84 /* Pods_UIObserverExampleIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIObserverExampleIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E19A234415D3B8E89565AA /* Pods_UIObserverExampleIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0643D585B8362FFDD4B104FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45AFF2D67A77D726D66B4BE6 /* Pods-UIObserverExampleIOS.debug.xcconfig */,
+				74400F5280CA00AD2949FBEA /* Pods-UIObserverExampleIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2BD03D6E624B99CE1C4FC15F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A695344583D126A52E7AFF84 /* Pods_UIObserverExampleIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E44B72020A5A3EF00F64742 = {
 			isa = PBXGroup;
 			children = (
 				9E44B72B20A5A3EF00F64742 /* UIObserverExampleIOS */,
 				9E44B72A20A5A3EF00F64742 /* Products */,
+				0643D585B8362FFDD4B104FD /* Pods */,
+				2BD03D6E624B99CE1C4FC15F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E44B73B20A5A3F000F64742 /* Build configuration list for PBXNativeTarget "UIObserverExampleIOS" */;
 			buildPhases = (
+				10465B6F9D566123642EEE64 /* [CP] Check Pods Manifest.lock */,
 				9E44B72520A5A3EF00F64742 /* Sources */,
 				9E44B72620A5A3EF00F64742 /* Frameworks */,
 				9E44B72720A5A3EF00F64742 /* Resources */,
+				B4B8008EED598D61808449A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10465B6F9D566123642EEE64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIObserverExampleIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4B8008EED598D61808449A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UIObserverExampleIOS/Pods-UIObserverExampleIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftObserver/SwiftObserver.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyToolz/SwiftyToolz.framework",
+				"${BUILT_PRODUCTS_DIR}/UIObserver/UIObserver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftObserver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyToolz.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIObserver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIObserverExampleIOS/Pods-UIObserverExampleIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E44B72520A5A3EF00F64742 /* Sources */ = {
@@ -278,14 +347,12 @@
 		};
 		9E44B73C20A5A3F000F64742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AFF2D67A77D726D66B4BE6 /* Pods-UIObserverExampleIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIObserverExampleIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flowtoolz.UIObserverExampleIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +362,12 @@
 		};
 		9E44B73D20A5A3F000F64742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74400F5280CA00AD2949FBEA /* Pods-UIObserverExampleIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIObserverExampleIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flowtoolz.UIObserverExampleIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

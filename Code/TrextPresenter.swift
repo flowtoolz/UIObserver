@@ -67,10 +67,10 @@ extension TextPresenter
     func setPresentedText(_ number: Int?)
     {
         presentedText =
-            {
-                guard let number = number else { return nil }
-                
-                return "\(number)"
+        {
+            guard let number = number else { return nil }
+            
+            return "\(number)"
         }()
     }
 }

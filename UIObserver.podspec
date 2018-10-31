@@ -30,5 +30,5 @@
     s.source_files = 'Code/*.swift'
 
     # dependencies
-    s.dependency 'SwiftObserver', '1.3.0'
+    s.dependency 'SwiftObserver'
 end

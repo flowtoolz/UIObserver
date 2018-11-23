@@ -4,7 +4,7 @@ target 'UIObserverExampleIOS' do
 
   use_frameworks!
 
-  pod "UIObserver"
-  pod 'GetLaid'
+  pod 'UIObserver'
+  pod 'GetLaid', '~> 1.1.2'
 
 end

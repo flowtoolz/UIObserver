@@ -1,70 +1,71 @@
 import SwiftObserver
 
-extension TextPresenter
+public extension TextPresenter
 {
     // MARK: Strings
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == Update<String>
+    public func present<O: Observable>(_ text: O) where O.UpdateType == Update<String>
     {
         self.presentedText = text.latestUpdate.new
         observe(text) { [weak self] in self?.presentedText = $0.new }
     }
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == Update<String?>
+    public func present<O: Observable>(_ text: O) where O.UpdateType == Update<String?>
     {
         self.presentedText = text.latestUpdate.new
         observe(text) { [weak self] in self?.presentedText = $0.new }
     }
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == String
+    public func present<O: Observable>(_ text: O) where O.UpdateType == String
     {
         self.presentedText = text.latestUpdate
         observe(text) { [weak self] in self?.presentedText = $0 }
     }
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == String?
+    public func present<O: Observable>(_ text: O) where O.UpdateType == String?
     {
         self.presentedText = text.latestUpdate
         observe(text) { [weak self] in self?.presentedText = $0 }
     }
     
-    func present(_ text: Variable<String>)
+    public func present(_ text: Variable<String>)
     {
+        self.presentedText = text.value
         observe(text) { [weak self] in self?.presentedText = $0.new }
     }
     
     // MARK: Integers
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == Update<Int>
+    public func present<O: Observable>(_ text: O) where O.UpdateType == Update<Int>
     {
         setPresentedText(text.latestUpdate.new)
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
     }
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == Update<Int?>
+    public func present<O: Observable>(_ text: O) where O.UpdateType == Update<Int?>
     {
         setPresentedText(text.latestUpdate.new)
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
     }
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == Int
+    public func present<O: Observable>(_ text: O) where O.UpdateType == Int
     {
         setPresentedText(text.latestUpdate)
         observe(text) { [weak self] in self?.setPresentedText($0) }
     }
     
-    func present<O: Observable>(_ text: O) where O.UpdateType == Int?
+    public func present<O: Observable>(_ text: O) where O.UpdateType == Int?
     {
         setPresentedText(text.latestUpdate)
         observe(text) { [weak self] in self?.setPresentedText($0) }
     }
     
-    func present(_ text: Variable<Int>)
+    public func present(_ text: Variable<Int>)
     {
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
     }
     
-    func setPresentedText(_ number: Int?)
+    public func setPresentedText(_ number: Int?)
     {
         presentedText =
         {
@@ -75,7 +76,7 @@ extension TextPresenter
     }
 }
 
-protocol TextPresenter: Observer
+public protocol TextPresenter: Observer
 {
     var presentedText: String? { get set }
 }

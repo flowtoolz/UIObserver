@@ -2,7 +2,7 @@
     
     # meta infos
     s.name             = "UIObserver"
-    s.version          = "0.1.0"
+    s.version          = "0.2.0"
     s.summary          = "The UI layer for SwiftObserver"
     s.description      = "Reactive UI based on SwiftObserver: You receive user input from the UI. The UI receives data to present."
     s.homepage         = "http://flowtoolz.com"
@@ -13,22 +13,22 @@
     
     # compiler requirements
     s.requires_arc = true
-    s.swift_version = '4.0'
+    s.swift_version = '4.2'
     
     # minimum platform SDKs
-    s.platforms = {:ios => "9.0", :osx => "10.10", :tvos => "9.0"}
+    s.platforms = {:ios => "9.0", :osx => "10.11", :tvos => "9.0"}
 
     # minimum deployment targets
     s.ios.deployment_target  = '9.0'
-    s.osx.deployment_target = '10.10'
+    s.osx.deployment_target = '10.11'
     s.tvos.deployment_target = '9.0'
 
     # sources
     s.ios.source_files = 'Code/UIKit/**/*.swift'
     s.tvos.source_files = 'Code/UIKit/**/*.swift'
     s.osx.source_files = 'Code/AppKit/**/*.swift'
-    s.source_files = 'Code/*.swift'
+    s.source_files = 'Code/Swift/**/*.swift'
 
     # dependencies
-    s.dependency 'SwiftObserver'
+    s.dependency 'SwiftObserver', '~> 1.4.0'
 end

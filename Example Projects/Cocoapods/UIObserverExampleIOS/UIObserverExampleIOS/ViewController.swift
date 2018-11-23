@@ -9,11 +9,16 @@ class ViewController: UIViewController, Observer
     {
         super.viewDidLoad()
         
-        exampleButton.constrainToParentExcludingTop()
-        exampleButton.constrainHeight(to: 100)
-        
         titleUpdateButton.constrainToParentExcludingBottom()
         titleUpdateButton.constrainHeight(to: 100)
+        
+        exampleField.constrainLeftToParent()
+        exampleField.constrainRightToParent()
+        exampleField.constrain(above: exampleButton)
+        exampleField.constrainHeight(to: 100)
+        
+        exampleButton.constrainToParentExcludingTop()
+        exampleButton.constrainHeight(to: 100)
         
         observe(exampleButton)
         {
@@ -50,15 +55,31 @@ class ViewController: UIViewController, Observer
     
     private lazy var exampleButton: UIButton =
     {
-        let btn = view.addForAutoLayout(UIButton())
+        let button = view.addForAutoLayout(UIButton())
         
-        btn.backgroundColor = UIColor.red
-        btn.setupObservability()
-        btn.present(observableTitle)
+        button.backgroundColor = UIColor.red
+        button.setupObservability()
+        button.present(observableTitle)
         
-        return btn
+        return button
     }()
     
+    private lazy var exampleField: UITextField =
+    {
+        let field = view.addForAutoLayout(UITextField())
+        
+        field.present(mappingForField)
+        field.backgroundColor = UIColor.green
+        field.textAlignment = .center
+
+        return field
+    }()
+    
+    private lazy var mappingForField = observableTitle.new().unwrap("").map
+    {
+        "Length of Button Title: \($0.count)"
+    }
+
     private let observableTitle = Var("Tap Me and Watch the Console")
 }
 

@@ -2,7 +2,7 @@
     
     # meta infos
     s.name             = "UIObserver"
-    s.version          = "0.2.0"
+    s.version          = "0.2.1"
     s.summary          = "The UI layer for SwiftObserver"
     s.description      = "Reactive UI based on SwiftObserver: You receive user input from the UI. The UI receives data to present."
     s.homepage         = "http://flowtoolz.com"
@@ -30,5 +30,5 @@
     s.source_files = 'Code/Swift/**/*.swift'
 
     # dependencies
-    s.dependency 'SwiftObserver', '~> 1.4.0'
+    s.dependency 'SwiftObserver', '~> 2.0'
 end

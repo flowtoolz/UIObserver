@@ -2,7 +2,7 @@
     
     # meta infos
     s.name             = "UIObserver"
-    s.version          = "0.2.1"
+    s.version          = "0.2.2"
     s.summary          = "The UI layer for SwiftObserver"
     s.description      = "Reactive UI based on SwiftObserver: You receive user input from the UI. The UI receives data to present."
     s.homepage         = "http://flowtoolz.com"

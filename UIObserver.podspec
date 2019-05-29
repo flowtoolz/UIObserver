@@ -2,7 +2,7 @@
     
     # meta infos
     s.name             = "UIObserver"
-    s.version          = "0.2.2"
+    s.version          = "0.2.3"
     s.summary          = "The UI layer for SwiftObserver"
     s.description      = "Reactive UI based on SwiftObserver: You receive user input from the UI. The UI receives data to present."
     s.homepage         = "http://flowtoolz.com"
@@ -13,7 +13,7 @@
     
     # compiler requirements
     s.requires_arc = true
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
     
     # minimum platform SDKs
     s.platforms = {:ios => "9.0", :osx => "10.11", :tvos => "9.0"}

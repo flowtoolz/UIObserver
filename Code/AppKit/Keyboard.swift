@@ -4,7 +4,7 @@ import SwiftyToolz
 
 public let keyboard = Keyboard()
 
-public class Keyboard: CustomObservable
+public class Keyboard: Observable
 {
     fileprivate init()
     {
@@ -20,8 +20,5 @@ public class Keyboard: CustomObservable
         if monitor == nil { log(error: "Couldn't get event monitor.") }
     }
     
-    public typealias Message = NSEvent
-    
-    public let messenger = Messenger(NSEvent())
+    public let messenger = Messenger<NSEvent>()
 }
-

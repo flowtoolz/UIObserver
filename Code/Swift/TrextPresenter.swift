@@ -4,25 +4,25 @@ public extension TextPresenter
 {
     // MARK: Strings
     
-    func present<O: Observable>(_ text: O) where O.Message == Change<String>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<String>
     {
         self.presentedText = text.latestMessage.new
         observe(text) { [weak self] in self?.presentedText = $0.new }
     }
     
-    func present<O: Observable>(_ text: O) where O.Message == Change<String?>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<String?>
     {
         self.presentedText = text.latestMessage.new
         observe(text) { [weak self] in self?.presentedText = $0.new }
     }
     
-    func present<O: Observable>(_ text: O) where O.Message == String
+    func present<O: BufferedObservable>(_ text: O) where O.Message == String
     {
         self.presentedText = text.latestMessage
         observe(text) { [weak self] in self?.presentedText = $0 }
     }
     
-    func present<O: Observable>(_ text: O) where O.Message == String?
+    func present<O: BufferedObservable>(_ text: O) where O.Message == String?
     {
         self.presentedText = text.latestMessage
         observe(text) { [weak self] in self?.presentedText = $0 }
@@ -36,25 +36,25 @@ public extension TextPresenter
     
     // MARK: Integers
     
-    func present<O: Observable>(_ text: O) where O.Message == Change<Int>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<Int>
     {
         setPresentedText(text.latestMessage.new)
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
     }
     
-    func present<O: Observable>(_ text: O) where O.Message == Change<Int?>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<Int?>
     {
         setPresentedText(text.latestMessage.new)
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
     }
     
-    func present<O: Observable>(_ text: O) where O.Message == Int
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Int
     {
         setPresentedText(text.latestMessage)
         observe(text) { [weak self] in self?.setPresentedText($0) }
     }
     
-    func present<O: Observable>(_ text: O) where O.Message == Int?
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Int?
     {
         setPresentedText(text.latestMessage)
         observe(text) { [weak self] in self?.setPresentedText($0) }

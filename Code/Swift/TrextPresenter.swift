@@ -4,13 +4,13 @@ public extension TextPresenter
 {
     // MARK: Strings
     
-    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<String>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Update<String>
     {
         self.presentedText = text.latestMessage.new
         observe(text) { [weak self] in self?.presentedText = $0.new }
     }
     
-    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<String?>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Update<String?>
     {
         self.presentedText = text.latestMessage.new
         observe(text) { [weak self] in self?.presentedText = $0.new }
@@ -36,13 +36,13 @@ public extension TextPresenter
     
     // MARK: Integers
     
-    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<Int>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Update<Int>
     {
         setPresentedText(text.latestMessage.new)
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
     }
     
-    func present<O: BufferedObservable>(_ text: O) where O.Message == Change<Int?>
+    func present<O: BufferedObservable>(_ text: O) where O.Message == Update<Int?>
     {
         setPresentedText(text.latestMessage.new)
         observe(text) { [weak self] in self?.setPresentedText($0.new) }
@@ -67,12 +67,7 @@ public extension TextPresenter
     
     func setPresentedText(_ number: Int?)
     {
-        presentedText =
-        {
-            guard let number = number else { return nil }
-            
-            return "\(number)"
-        }()
+        presentedText = number.map { "\($0)" }
     }
 }
 
